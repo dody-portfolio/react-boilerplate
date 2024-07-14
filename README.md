@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 리액트 보일러플레이트
 
-## Getting Started
+- 폰트 설정
 
-First, run the development server:
+  - pretendard 설정 (로컬로 폰트 가져와서, customFont Provider만들어서 layout에서 불러오기)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 상태관리 라이브러리 가장 심플한걸로
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  - zustand
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- css / 스타일링 라이브러리
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  - tailwindcss
+    - globals.css에 tailwind Unknown 에러 있는거 수정 - tailwind를 인식하지 못해서 발생하는 에러인데, 코드편집기에서 인식 해서발생하는 경우도 있어서 extension을 설치해주면 된다 - vsc 'PostCSS Language Support' extension install
+  - scss 패키지 설치
 
-## Learn More
+- meta data provider
 
-To learn more about Next.js, take a look at the following resources:
+- cra로 만들어진 리액트도 내장된 컴파일러를 사용하는데,
+  nextjs의 경우에는 바벨을 사용한다.
+  https://react.dev/learn/react-compiler#usage-with-nextjs
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 참고
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+https://velog.io/@jjunyjjuny/React-TS-boilerplate-%EC%A0%9C%EC%9E%91%EA%B8%B0-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1#-packagejson
