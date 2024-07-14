@@ -1,5 +1,15 @@
 # 리액트 보일러플레이트
 
+## idea
+
+- yarn berry 도입할것
+
+## 업데이트 로그
+
+### 2024/07/14
+
+- cra로 nextjs 프로젝트 설정
+
 - 폰트 설정
 
   - pretendard 설정 (로컬로 폰트 가져와서, customFont Provider만들어서 layout에서 불러오기)
@@ -19,9 +29,3 @@
 - cra로 만들어진 리액트도 내장된 컴파일러를 사용하는데,
   nextjs의 경우에는 바벨을 사용한다.
   https://react.dev/learn/react-compiler#usage-with-nextjs
-
--
-
-### 참고
-
-https://velog.io/@jjunyjjuny/React-TS-boilerplate-%EC%A0%9C%EC%9E%91%EA%B8%B0-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1#-packagejson
